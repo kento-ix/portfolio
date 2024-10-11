@@ -1,14 +1,27 @@
-import React from "react";
-import HeaderContainner from "./component/Intoduction";
+import React, { useState } from "react";
+import HeaderContainer from "./component/Intoduction";
 import About from "./component/AboutSection";
 
-function App() {
+const App: React.FC = () => {
+  const [darkMode, setDarkMode] = useState<boolean>(false);
+
+  // ダークモードをトグルする関数
+  const toggleDarkMode = () => {
+    setDarkMode((prevMode) => !prevMode);
+  };
+
   return (
-    <>
-      <HeaderContainner/>
-      <About />
-    </>
+    <div
+      className={`min-h-screen ${darkMode ? "text-white" : "text-black"}`}
+      style={{
+        backgroundColor: darkMode ? "rgba(7, 5, 14, 0.8)" : "white",
+        transition: "background-color 0.3s ease",
+      }}
+    >
+      <HeaderContainer toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+      <About toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
+    </div>
   );
-}
+};
 
 export default App;

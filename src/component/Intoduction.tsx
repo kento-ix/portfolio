@@ -1,21 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "./Header";
 import ButtonToDownload from "./ButtonToDownload";
-import About from "./AboutSection";
 
-const HeaderContainner: React.FC = () => {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
+interface HeaderContainerProps {
+  toggleDarkMode: () => void;
+  darkMode: boolean;
+}
 
-  const toggleDarkMode = () => {
-    setDarkMode((prevMode) => !prevMode);
-  };
-
+const HeaderContainer: React.FC<HeaderContainerProps> = ({ toggleDarkMode, darkMode }) => {
   return (
     <div
       className={`min-h-screen ${darkMode ? "text-white" : "text-black"}`}
       style={{
         backgroundColor: darkMode ? "rgba(7, 5, 14, 0.8)" : "white",
-        transition: "background-color 0.3s ease", // 背景色の切り替えをスムーズにする
+        transition: "background-color 0.3s ease",
       }}
     >
       <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
@@ -28,4 +26,4 @@ const HeaderContainner: React.FC = () => {
   );
 };
 
-export default HeaderContainner;
+export default HeaderContainer;

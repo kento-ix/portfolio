@@ -3,7 +3,9 @@ import HeaderContainner from './Container';
 
 function App() {
   return (
-    <HeaderContainner/>
+    <>
+      <HeaderContainner/>
+    </>
   );
 }
 

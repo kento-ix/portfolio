@@ -1,10 +1,12 @@
-import React from 'react';
-import HeaderContainner from './Container';
+import React from "react";
+import HeaderContainner from "./component/Intoduction";
+import About from "./component/AboutSection";
 
 function App() {
   return (
     <>
       <HeaderContainner/>
+      <About />
     </>
   );
 }

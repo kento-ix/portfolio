@@ -1,4 +1,5 @@
 import React from "react";
+import '../index.css';
 
 const ButtonToDownload = () => {
 
@@ -10,8 +11,8 @@ const ButtonToDownload = () => {
     };
 
     return(
-        <button onClick={handleDownload} className="bg-blue-500 text-white rounded hover:bg-blue-600 shadow-md hover:shadow-lg transition duration-300">
-            Download Resume
+        <button onClick={handleDownload} className="my-8 p-4 bg-blue-500 text-white rounded-2xl">
+            Download CV
         </button>
     );
 };

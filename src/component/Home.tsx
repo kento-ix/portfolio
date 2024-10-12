@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./HeaderBar";
 import ButtonToDownload from "../functions/ButtonToDownload";
 import ButtonGmail from "../functions/ButtonToCopy";
-import useWindowSize from "../custom/useWiindowSize";
+import useWindowSize from "../custom/useWindowSize";
 
 interface HeaderContainerProps {
   toggleDarkMode: () => void;

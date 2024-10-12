@@ -32,11 +32,11 @@ const Header: React.FC<HeaderProps> = ({ toggleDarkMode, darkMode }) => {
                     </button>
                     {/* メニューが開いているときに表示 */}
                     {isMenuOpen && (
-                        <div className="absolute bg-white shadow-lg rounded-lg p-4 mt-2 right-0 z-10">
-                            <button className="block hover:text-blue-300 text-lg hover:underline">Home</button>
-                            <button className="block hover:text-blue-300 text-lg hover:underline">About</button>
-                            <button className="block hover:text-blue-300 text-lg hover:underline">Project</button>
-                            <button className="block hover:text-blue-300 text-lg hover:underline">Contact</button>
+                        <div className="absolute bg-black shadow-lg rounded-lg p-4 mt-2 right-0 z-10">
+                            <button className="block hover:text-blue-300 text-white text-lg hover:underline">Home</button>
+                            <button className="block hover:text-blue-300 text-white text-lg hover:underline">About</button>
+                            <button className="block hover:text-blue-300 text-white text-lg hover:underline">Project</button>
+                            <button className="block hover:text-blue-300 text-white text-lg hover:underline">Contact</button>
                         </div>
                     )}
                 </>

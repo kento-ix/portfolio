@@ -33,8 +33,8 @@ const HeaderContainer: React.FC<HeaderContainerProps> = ({
         <div className="text-4xl text-center w-full">Kento Kanehira</div>
         <div className="text-xl text-center w-full mt-2">Full-Stack developer</div>
         <div className="mt-4 self-center space-x-4">
-          <ButtonToDownload /> 
-          <ButtonGmail />
+          <ButtonToDownload darkMode={darkMode}/> 
+          <ButtonGmail darkMode={darkMode}/>
         </div>
       </div>
       ) : (
@@ -43,8 +43,8 @@ const HeaderContainer: React.FC<HeaderContainerProps> = ({
         <div className="text-6xl text-center justify-center w-full">Kento Kanehira</div>
         <div className="text-3xl text-center justify-center w-full mt-4">Full-Stack developer</div>
         <div className="mt-2 self-center space-x-6">
-          <ButtonToDownload /> 
-          <ButtonGmail />
+          <ButtonToDownload darkMode={darkMode}/> 
+          <ButtonGmail darkMode={darkMode}/>
         </div>
       </div>
       )}

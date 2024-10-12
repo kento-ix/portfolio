@@ -1,7 +1,10 @@
 import React from "react";
 
-const ButtonToDownload = () => {
+interface ButtonToDownloadProps {
+    darkMode: boolean;
+}
 
+const ButtonToDownload: React.FC<ButtonToDownloadProps> = ({ darkMode }) => {
     const handleDownload = () => {
         const link = document.createElement('a');
         link.href = '/dummy.pdf';
@@ -9,8 +12,11 @@ const ButtonToDownload = () => {
         link.click();
     };
 
-    return(
-        <button onClick={handleDownload} className="my-4 p-3 bg-blue-800 text-white rounded-2xl">
+    return (
+        <button
+            onClick={handleDownload}
+            className={`my-4 p-3 rounded-2xl ${darkMode ? "bg-blue-500/40 text-white" : "bg-blue-500/40 text-black"}`}
+        >
             Download CV
         </button>
     );

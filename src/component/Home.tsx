@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./HeaderBar";
 import ButtonToDownload from "../functions/ButtonToDownload";
 import ButtonGmail from "../functions/ButtonToCopy";
+import useWindowSize from "../custom/useWiindowSize";
 
 interface HeaderContainerProps {
   toggleDarkMode: () => void;
@@ -12,6 +13,10 @@ const HeaderContainer: React.FC<HeaderContainerProps> = ({
   toggleDarkMode,
   darkMode,
 }) => {
+  const { width } = useWindowSize();
+
+  const isMobile = width < 768;
+
   return (
     <div
       className={`min-h-screen ${darkMode ? "text-white" : "text-black"}`}
@@ -21,7 +26,19 @@ const HeaderContainer: React.FC<HeaderContainerProps> = ({
       }}
     >
       <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
-      <div className="pt-16 ml-64 items-start flex-col flex">
+
+      {isMobile ? (
+        <div className="mt-16 px-4 flex-col flex items-center">
+        <div className="text-center text-2xl mb-2">Hello, I'm</div>
+        <div className="text-4xl text-center w-full">Kento Kanehira</div>
+        <div className="text-xl text-center w-full mt-2">Full-Stack developer</div>
+        <div className="mt-4 self-center space-x-4">
+          <ButtonToDownload /> 
+          <ButtonGmail />
+        </div>
+      </div>
+      ) : (
+        <div className="mt-36 pr-96 mr-40 items-start flex-col flex">
         <div className="w-full justify-center text-center text-4xl mb-4">Hello, I'm</div>
         <div className="text-6xl text-center justify-center w-full">Kento Kanehira</div>
         <div className="text-3xl text-center justify-center w-full mt-4">Full-Stack developer</div>
@@ -30,6 +47,7 @@ const HeaderContainer: React.FC<HeaderContainerProps> = ({
           <ButtonGmail />
         </div>
       </div>
+      )}
     </div>
   );
 };

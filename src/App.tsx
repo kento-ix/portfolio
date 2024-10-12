@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import HeaderContainer from "./component/Intoduction";
+import HeaderContainer from "./component/Home";
 import About from "./component/AboutSection";
 
 const App: React.FC = () => {

@@ -1,5 +1,4 @@
 import React from "react";
-import '../index.css';
 
 const ButtonToDownload = () => {
 
@@ -11,7 +10,7 @@ const ButtonToDownload = () => {
     };
 
     return(
-        <button onClick={handleDownload} className="my-8 p-4 bg-blue-500 text-white rounded-2xl">
+        <button onClick={handleDownload} className="my-4 p-3 bg-blue-800 text-white rounded-2xl">
             Download CV
         </button>
     );

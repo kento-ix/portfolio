@@ -1,12 +1,11 @@
 import React from "react";
-import Header from "./Header";
 
-interface HeaderContainerProps {
+interface HeaderProps {
     toggleDarkMode: () => void;
     darkMode: boolean;
   }
 
-  const About: React.FC<HeaderContainerProps> = ({ toggleDarkMode, darkMode }) => {
+  const About: React.FC<HeaderProps> = ({ toggleDarkMode, darkMode }) => {
     return(
         <div
             className={`min-h-screen ${darkMode ? "text-white" : "text-black"}`}
@@ -15,10 +14,11 @@ interface HeaderContainerProps {
                 transition: "background-color 0.3s ease",
             }}
         >
-            <div className="text-base">
-                I am a student of Langara COllege Associate degree in Computer Science
-            </div>
+            
+        <div className="text-base">
+            I am a student of Langara COllege Associate degree in Computer Science
         </div>
+    </div>
     
     );
 };

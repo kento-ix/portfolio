@@ -2,6 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.custom-shadow {
-  box-shadow: 4px 4px 10px rgba(105, 146, 235, 0.975); /* 下右方向に影を追加 */
+.underline {
+  text-decoration: underline;
 }
+

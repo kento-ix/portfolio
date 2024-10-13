@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import HeaderContainer from "./component/Home";
-import About from "./component/AboutSection";
+import About from "./component/About";
 
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState<boolean>(false);

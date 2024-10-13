@@ -1,11 +1,11 @@
 export const iconVariants = {
     hidden: {
-        pathLength: 0,
-        fill: "rgba(255, 255, 255, 0)"
+        opacity: 0,
+        scale: 0.8
     },
     visible: {
-        pathLength: 1,
-        fill: "rgba(255, 255, 255, 1)",
-        transition: { duration: 2, ease: "easeInOut" }
+        opacity: 1,
+        scale: 1,
+        transition: { duration: 3, ease: "easeInOut" }
     }
 };

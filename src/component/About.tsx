@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import useWindowSize from "../custom/useWindowSize"; // useWindowSizeをインポート
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { textVariants } from "../animations/textAnimations";
-import { iconVariants } from "../animations/iconAnimations";
+import { textVariants } from "../animation/textAnimations";
 
 interface HeaderProps {
     toggleDarkMode: () => void;
@@ -42,15 +41,22 @@ const About: React.FC<HeaderProps> = ({ toggleDarkMode, darkMode }) => {
                     </div>
                 ) : (
                     // デスクトップ版
-                    <div className="text-lg rounded-xl bg-gray-500/40 w-1/3 ml-32 flex items-center justify-center p-4" style={{ height: '600px' }}>
-                        <motion.p
-                            ref={ref}               
-                            variants={iconVariants}  
-                            initial="hidden"         
-                            animate={controls} 
-                        >
-                            Hello, I'm Kento Kanehira, a passionate web developer with a focus on creating dynamic and responsive user experiences. I specialize in React, TypeScript, and modern web technologies.
-                        </motion.p>
+                    <div className="pt-10">
+                        <div className="text-lg rounded-xl bg-gray-500/40 w-1/3 ml-32 flex items-center justify-center p-3" style={{ height: '600px' }}>
+                            <motion.p
+                                ref={ref}               
+                                variants={textVariants}  
+                                initial="hidden"         
+                                animate={controls} 
+                            >
+                                Hello, I'm Kento Kanehira, a passionate web developer with a focus on creating dynamic and responsive user experiences. I specialize in React, TypeScript, and modern web technologies.
+                            </motion.p>
+                        </div>
+                        <div className="flex justify-end mr-10 ">
+                            <div className="text-lg rounded-xl bg-gray-500/40 w-2/4">
+                                <p>Hi</p> 
+                            </div>
+                        </div>
                     </div>
                 )}
             </div>

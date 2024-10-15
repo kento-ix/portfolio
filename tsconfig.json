@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es6", // ここをes5からes6に変更 (必要であれば)
+    "target": "es6", 
     "lib": [
       "dom",
       "dom.iterable",
@@ -18,9 +18,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx" // React 17以上の場合はそのまま、React 16以下なら "react" に変更
+    "jsx": "react-jsx"
   },
   "include": [
     "src"
-  ]
+  ],
+  "paths": {
+    "@/*": ["src/*"]
+  }
 }

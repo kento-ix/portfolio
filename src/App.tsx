@@ -3,7 +3,7 @@ import HeaderContainer from "./component/Home";
 import About from "./component/About";
 
 const App: React.FC = () => {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
+  const [darkMode, setDarkMode] = useState<boolean>(true);
 
   // ダークモードをトグルする関数
   const toggleDarkMode = () => {

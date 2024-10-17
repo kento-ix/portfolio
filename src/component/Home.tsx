@@ -5,6 +5,7 @@ import ButtonGmail from "../functions/ButtonToCopy";
 import useWindowSize from "../custom/useWindowSize";
 import { ShootingStars } from "../aceternity/ShootingStar";
 import { StarsBackground } from "../aceternity/StarsBackground";
+import { TypewriterEffect } from "../aceternity/Typewritter";
 
 interface HeaderContainerProps {
   toggleDarkMode: () => void;
@@ -47,7 +48,7 @@ const HeaderContainer: React.FC<HeaderContainerProps> = ({
         <div className="mt-16 px-4 flex-col flex items-center">
           <div className="text-center text-2xl mb-2">Hello, I'm</div>
           <div className="text-4xl text-center w-full">Kento Kanehira</div>
-          <div className="text-xl text-center w-full mt-2">Full-Stack developer</div>
+          <div className="text-xl text-center w-full mt-2">Full-Stack Enginner</div>
           <div className="mt-4 self-center space-x-4">
             <ButtonToDownload darkMode={darkMode}/> 
             <ButtonGmail darkMode={darkMode}/>
@@ -57,7 +58,7 @@ const HeaderContainer: React.FC<HeaderContainerProps> = ({
         <div className="mt-36 pr-96 mr-40 items-start flex-col flex">
           <div className="w-full justify-center text-center text-4xl mb-4">Hello, I'm</div>
           <div className="text-6xl text-center justify-center w-full">Kento Kanehira</div>
-          <div className="text-3xl text-center justify-center w-full mt-4">Full-Stack developer</div>
+          <div className="text-3xl text-center justify-center w-full mt-4">Full-Stack Enginner</div>
           <div className="mt-2 self-center space-x-6">
             <ButtonToDownload darkMode={darkMode}/> 
             <ButtonGmail darkMode={darkMode}/>

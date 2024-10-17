@@ -42,7 +42,7 @@ const About: React.FC<HeaderProps> = ({ toggleDarkMode, darkMode }) => {
                 ) : (
                     // デスクトップ版
                     <div className="pt-10">
-                        <div className="text-lg rounded-xl bg-gray-500/40 w-1/3 ml-32 flex items-center justify-center p-3" style={{ height: '600px' }}>
+                        <div className="text-lg rounded-xl bg-gray-500/40 w-1/3 ml-32 flex items-center justify-center p-3" style={{ height: '350px' }}>
                             <motion.p
                                 ref={ref}               
                                 variants={textVariants}  
@@ -52,11 +52,7 @@ const About: React.FC<HeaderProps> = ({ toggleDarkMode, darkMode }) => {
                                 Hello, I'm Kento Kanehira, a passionate web developer with a focus on creating dynamic and responsive user experiences. I specialize in React, TypeScript, and modern web technologies.
                             </motion.p>
                         </div>
-                        <div className="flex justify-end mr-10 ">
-                            <div className="text-lg rounded-xl bg-gray-500/40 w-2/4">
-                                <p>Hi</p> 
-                            </div>
-                        </div>
+                        
                     </div>
                 )}
             </div>

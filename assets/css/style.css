@@ -3,47 +3,20 @@ body, footer {
     padding: 0;
 }
 
-.icon-container img {
-    width: 40px;
-    height: 40px;
-    border: 2px gray solid;
-    border-radius: 10px;
-    padding: 9px;
+#header-placeholder {
+    position: sticky;
+    top: 0;
 }
+
 
 
 /*Style for desktop (Whe the desplay is more than 768px)*/
 @media (min-width: 768px) {
-    .icon-container img {
-        width: 80px;
-        height: 80px;
-        border: 2px gray solid;
-        border-radius: 10px;
-        padding: 9px;
-        
-    }
 
-    .icon-container {
-        display: flex;
-        gap: 20px;
-        justify-content: end;
-    }
     
-    .icon-first img {
-        display: flex;
-    }
-
-    .icon-second img {
-        display: flex;
-    }
-
-    .icon-third img {
-        display: flex; 
-    }
 
     body, footer {
         margin: 0;
         padding: 0;
     }
-
 }

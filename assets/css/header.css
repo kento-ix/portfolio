@@ -1,0 +1,54 @@
+#menu {
+    display: none; /* リストを非表示 */
+    flex-direction: column; /* 縦並びのスタイル */
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-toggle {
+    display: block; /* トグルボタンを表示 */
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
+
+#menu.show {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    #menu {
+        display: flex; /* リストを表示 */
+        flex-direction: row; /* 横並びのスタイル */
+        justify-content: center;
+        position: static;
+        background-color: transparent;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #menu li {
+        margin: 0 10px;
+    }
+    
+    #menu li a {
+        text-decoration: none;
+        color: rgba(77, 103, 251, 0.809);
+    }
+  
+    
+    .menu-toggle {
+        display: none; /* トグルボタンは非表示 */
+    }
+    
+    #menu li {
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,21 @@
+
+@media (min-width: 768px) {
+    #footer-menu{
+        display: flex;
+        list-style: none;
+    }
+ 
+    #footer-menu li{
+        margin: 0 10px;
+    }
+ 
+    #footer-menu li a {
+        text-decoration: none;
+        color: rgba(77, 103, 251, 0.809);
+    }
+    
+    footer {
+        background-color: rgba(178, 178, 178, 0.846);
+        height: 9rem;
+    }
+}

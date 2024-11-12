@@ -1,0 +1,32 @@
+@media (min-width: 768px) {
+    .contact-card {
+        position: relative;
+        font-family: 'Courier New', Courier, monospace;
+        border: 0.5px gray solid;
+        border-radius: 20px;
+        width: 45%;
+        height: auto;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        padding: 10px;
+    }
+
+    .contact-card img{
+        width: 30px;
+        height: 30px;
+        padding: 12px;
+        margin-right: 20px;
+        border: 0.5px gray solid;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+    }
+
+    .contact-card .first-info{
+        margin-left: 3rem;
+        
+    }
+
+    .contact-card .second-info {
+        margin-left: 3rem;
+    }
+}

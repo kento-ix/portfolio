@@ -11,7 +11,6 @@ body, footer {
 /*Style for desktop (Whe the desplay is more than 768px)*/
 @media (min-width: 768px) {
     .introduction{
-        margin-left: 5rem;
         margin-top: 10rem;
         display: flex;
         font-family: 'Poppins', sans-serif;
@@ -56,39 +55,12 @@ body, footer {
         margin-left: 5rem; 
     }
 
-    .contact-card {
-        position: relative;
+    .personal-work {
+        margin-left: 5rem;
         font-family: 'Poppins', sans-serif;
-        border: 0.5px gray solid;
-        border-radius: 20px;
-        width: 50%;
-        height: auto;
-        margin-top: 2rem;
-        margin-left: 2rem;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    .contact-card img{
-        width: 40px;
-        height: 40px;
-        padding: 12px;
-        margin-right: 20px;
-        border: 0.5px gray solid;
-        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-        border-radius: 10px;
-    }
-
-    .contact-card .first-info{
-        margin-left: 3rem;
-        
-    }
-
-    .contact-card .second-info {
-        margin-left: 3rem;
+        color: rgb(77, 76, 76);
     }
     
-    
-
     body, footer {
         margin: 0;
         padding: 0;

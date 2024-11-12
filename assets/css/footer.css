@@ -17,5 +17,8 @@
     footer {
         background-color: rgba(178, 178, 178, 0.846);
         height: 9rem;
+        bottom: 0;   /* 画面の下端に配置 */
+        left: 0;     /* 左端に配置 */
+        width: 100%
     }
 }

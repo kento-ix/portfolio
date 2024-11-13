@@ -24,8 +24,8 @@
 
 @media (min-width: 768px) {
     #menu {
-        display: flex; /* リストを表示 */
-        flex-direction: row; /* 横並びのスタイル */
+        display: flex; 
+        flex-direction: row;
         justify-content: center;
         position: static;
         background-color: transparent;

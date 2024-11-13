@@ -26,11 +26,11 @@
 }
 
 .icon-first {
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .icon-third {
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 .icon-first img:nth-child(1) {
@@ -106,7 +106,7 @@
     }
 
     .icon-third {
-        margin-top: 6rem;
+        margin-top: 4rem;
     }
     
     .icon-first img {

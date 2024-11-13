@@ -35,6 +35,12 @@
         margin-top: 2rem;
     }
 
+    #menu li a:hover {
+        background-color: rgb(238, 237, 237);
+        padding: 5px;
+        border-radius: 10px;
+    }
+
     #menu li {
         margin: 0 10px;
     }
@@ -42,6 +48,8 @@
     #menu li a {
         text-decoration: none;
         color: rgba(77, 103, 251, 0.809);
+        font-size: large;
+        transition: background-color 0.3s ease;
     }
 
     .menu-toggle {

@@ -7,6 +7,7 @@
 @media (min-width: 768px) {
     .fa-star {
         color: gray;
+        font-size: 13px;
     }
 
     .filled {
@@ -32,7 +33,7 @@
 
     .first-row, .second-row {
         display: flex;
-        gap: 20rem; 
+        gap: 2rem; /* Adjust the gap for better alignment */
         margin-top: 3rem;
     }
 
@@ -47,19 +48,33 @@
         text-decoration: none;
     }
 
-    .skill-container img{
+    .skill-container img {
         width: 60px;
         height: 60px;
         border: 3px solid rgb(241, 241, 241);
         border-radius: 10px;
         padding: 9px;
         box-shadow: 3px 3px 5px rgba(157, 157, 157, 0.3);
+        display: block;
+        margin: 0 auto;
     }
 
     .skill-container {
         grid-template-columns: repeat(4, 1fr);
         justify-content: center;
         max-width: 1000px;
-        margin: 0 auto; 
+        margin: 0 auto;
+    }
+    .skill-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    .stars {
+        display: flex;
+        gap: 0.2rem;
     }
 }

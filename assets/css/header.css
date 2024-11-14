@@ -1,25 +1,39 @@
 #menu {
-    display: none; 
-    flex-direction: column;
-    background-color: #333;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    width: 100%;
-    text-align: center;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    position: static;
+    background-color: transparent;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 2rem;
+}
+
+#menu li a:hover {
+    background-color: rgb(238, 237, 237);
+    border-radius: 10px;
+}
+
+#menu li {
+    margin: 0 10px;
+    padding: 20px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: rgba(77, 103, 251, 0.809);
+    font-size: large;
+    transition: background-color 0.3s ease;
+    padding: 10px;
 }
 
 .menu-toggle {
-    display: block; 
-    font-size: 30px;
-    background: transparent;
-    border: none;
-    color: #333;
-    cursor: pointer;
+    display: none;
 }
 
-#menu.show {
-    display: flex;
+#menu li {
+    margin-right: 20px;
 }
 
 @media (min-width: 768px) {

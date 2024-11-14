@@ -1,12 +1,83 @@
-
-
 body, footer {
     margin: 0;
     padding: 0;
 }
 
+.icon-container {
+    margin-top: 3rem;
+}
+
+.aboutme {
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgba(90, 90, 90, 0.3);
+    border-radius: 100%;
+    object-fit: cover;
+    align-items: end;
+}
+
+.introduction {
+    margin-left: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.introduction a {
+    color: rgb(249, 102, 102);
+    text-decoration: none;
+}
 
 
+.personal-work {
+    margin-left: 2rem;
+}
+
+.tech-item img {
+    width: 30px;
+    height: 30px;
+    border: 3px solid rgb(241, 241, 241);
+    border-radius: 10px;
+    padding: 9px;
+    box-shadow: 3px 3px 5px rgba(157, 157, 157, 0.3);
+    margin-bottom: 0.5rem;
+}
+
+.tech-item p {
+    margin: 0;
+    font-size: 0.9rem; 
+}
+
+.tech-stack {
+    display: flex;
+    gap: 2rem;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+}
+
+.cards {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    gap: 16px;
+    scroll-behavior: smooth;
+}
+
+.cards::-webkit-scrollbar {
+    display: none;
+}
+
+.card1 {
+    min-width: 300px;
+    flex-shrink: 0;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 /*Style for desktop (Whe the desplay is more than 768px)*/
 @media (min-width: 768px) {

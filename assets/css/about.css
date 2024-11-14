@@ -1,3 +1,63 @@
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    height: 100%; 
+    font-family: "Rajdhani", sans-serif;
+}
+
+.history h1 {
+    font-size: 25px;
+}
+
+.history {
+    margin-left: 1rem;
+}
+
+.personal-info {
+    font-size: 14px;
+    margin-left: 1rem;
+}
+.date {
+    font-size: 13px;
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-card, .skill-card {
+    border: 0.5px gray solid;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 2rem;
+    padding: 10px;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.contact-card img {
+    width: 30px;
+    height: 30px;
+    padding: 12px;
+    margin-right: 20px;
+    border: 0.5px gray solid;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.skill-card .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
 @media (min-width: 768px) {
     .container {
         display: flex;
@@ -16,7 +76,21 @@
         margin-top: 4rem;
     }
 
+    .history {
+        margin-left: 0;
+    }
     
+    .personal-info {
+        font-size: 14px;
+    }
+
+    .date {
+        font-size: 15px;
+    }
+
+    .personal-info {
+        font-size: 15px;
+    }
     
     .contact-card, .skill-card {
         border: 0.5px gray solid;
@@ -75,5 +149,7 @@
         height: 100%; 
     }
 
-    
+    .history h1 {
+        font-size: 40px;
+    }
 }

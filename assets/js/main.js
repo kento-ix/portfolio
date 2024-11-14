@@ -15,14 +15,5 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         stars.innerHTML = starsHtml;
-    });
-
-    const hungerMenu = document.getElementById('hunger-menu');
-    const menu = document.getElementById('menu');
-    
-    if (hungerMenu && menu) {
-        hungerMenu.addEventListener('click', function () {
-            menu.classList.toggle('show');
-        });
-    }
+    }); 
 });

@@ -34,7 +34,7 @@
 .contact-card, .skill-card {
     border: 0.5px gray solid;
     border-radius: 20px;
-    width: 100%;
+    width: 80%;
     max-width: 500px;
     height: auto;
     margin-top: 2rem;
@@ -56,6 +56,17 @@
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+}
+
+.container {
+    margin-left: 1rem;
+}
+
+.skill-link a {
+    margin-top: 20px;
+    color: red;
+    text-decoration: none;
+    align-self: flex-end;
 }
 
 @media (min-width: 768px) {

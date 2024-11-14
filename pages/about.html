@@ -5,16 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/about.css">
-    <link rel="stylesheet" href="/assets/css/home/icons.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/about.css">
+    <link rel="stylesheet" href="../assets/css/home/icons.css">
 
-    <script src="/assets/js/main.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
 </head>
 <body>
-    <div id="header-placeholder"></div>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./skills.html">Skills</a></li>
+            </ul>
+        </nav>
+
+    
+        <button id="hunger-menu" class="menu-toggle" arial-label="Toggle menu">
+            &#9776;
+        </button>
+
+    </header>
 
     <div class="container">
         <div class="history">
@@ -85,6 +99,15 @@
         </div>
     </div>
 
-    <div id="footer-placeholder"></div>
+    <footer>
+        <nav>
+            <ul id="footer-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./skills.html">Skills</a></li>
+            </ul>
+        </nav>
+        <p class="copywrite">&copy; 2024 Kento Kanehira</p>
+    </footer>
 </body>
 </html>

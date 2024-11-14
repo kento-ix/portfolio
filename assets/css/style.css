@@ -10,6 +10,11 @@ body, footer {
 
 /*Style for desktop (Whe the desplay is more than 768px)*/
 @media (min-width: 768px) {
+    .first-info {
+        max-width: 1000px;
+        margin: 0 auto; 
+    }
+
     .introduction{
         margin-top: 10rem;
         display: flex;
@@ -59,6 +64,8 @@ body, footer {
         margin-left: 5rem;
         font-family: 'Poppins', sans-serif;
         color: rgb(77, 76, 76);
+        max-width: 1000px;
+        margin: 0 auto; 
     }
 
     .cards {

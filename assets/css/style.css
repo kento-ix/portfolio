@@ -24,26 +24,23 @@ body, footer {
 
     .introduction h1 {
         position: absolute;
-        margin-left: 5rem;
         margin-top: 20rem;
     }
 
     .introduction .name {
         position: absolute;
-        margin-left: 5rem;
         margin-top: 25rem;
         font-size: 20px;
     }
 
     .introduction p {
         position: absolute;
-        margin-left: 5rem;
         margin-top: 28rem;
     }
 
     .introduction a {
         position: absolute;
-        margin-left: 30rem;
+        margin-left: 25rem;
         margin-top: 40rem;
         font-size: 15px;
         color: red;
@@ -57,11 +54,10 @@ body, footer {
         border: 3px solid rgba(90, 90, 90, 0.3);
         border-radius: 100%;
         object-fit: cover;
-        margin-left: 13rem; 
+        margin-left: 3rem; 
     }
 
     .personal-work {
-        margin-left: 5rem;
         font-family: 'Poppins', sans-serif;
         color: rgb(77, 76, 76);
         max-width: 1000px;

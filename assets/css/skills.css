@@ -15,10 +15,13 @@
     }
 
     .rating-container {
-        margin-left: 10rem;
         justify-content: center;
         max-width: 1000px;
         margin: 0 auto; 
+    }
+
+    .star {
+        margin-left: 12rem;
     }
 
     .skill-title {

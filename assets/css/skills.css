@@ -73,6 +73,7 @@
         justify-content: center;
         max-width: 1000px;
         margin: 0 auto;
+        font-family: "Rajdhani", sans-serif;
     }
     .skill-item {
         display: flex;

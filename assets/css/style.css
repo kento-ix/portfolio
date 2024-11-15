@@ -1,6 +1,17 @@
 body, footer {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.referece {
+    text-align: center;
+    color: gray;
+}
+
+.referece a {
+    text-decoration: none;
+    color: rgb(93, 141, 21);
 }
 
 .icon-container {
@@ -18,7 +29,6 @@ body, footer {
 
 .introduction {
     margin-left: 2rem;
-    font-family: 'Poppins', sans-serif;
 }
 
 .introduction a {
